@@ -1,0 +1,12 @@
+.logostyle {
+    margin-left: 50px;
+}
+
+@media screen and (max-width: 990px) {
+    body {
+      background-color: lightgreen;
+    }
+    .logostyle{
+        margin-left: 10px;
+    }
+  }
