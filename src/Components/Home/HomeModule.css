@@ -1,0 +1,162 @@
+/* @media screen and (max-width: 990px) {
+    
+    .photo{
+        width: 200px;
+        height: 200px;
+    }
+  } */
+.visual{
+    height: 85vh;
+}
+ .text_style {
+    font-size: 3rem;
+    font-weight: bold !important;
+ }
+ .profileImage {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-left: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    /* border-bottom: 7px solid #9802be; */
+    /* transform: rotate(-2deg); */
+    transition: 0.5s;
+    /* position: fixed; */
+    /* right: 19vw; */
+    margin-top: 3rem;
+    /* margin-left: 10rem; */
+  }
+  .profileImage img {
+    width: 400px;
+  }
+
+  .Download-button {
+    display: flex;
+    align-items: center;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 17px;
+    padding: 12px 20px;
+    color: white;
+    background: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
+    border: none;
+    box-shadow: 0 0.7em 1.5em -0.5em rgba(59, 48, 78, 0.527);
+    letter-spacing: 0.05em;
+    border-radius: 8px;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.2s;
+  }
+  
+  .Download-button svg {
+    margin-right: 8px;
+    width: 25px;
+  }
+  
+  .Download-button:hover {
+    box-shadow: 0 0.5em 1.5em -0.5em #3b82f6;
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+  }
+  
+  .Download-button:active {
+    box-shadow: 0 0.3em 1em -0.5em #3b82f6;
+  }
+  
+  .Download-button::before {
+    content: "";
+    width: 4px;
+    height: 40%;
+    background-color: white;
+    position: absolute;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    left: 0;
+    transition: all 0.2s;
+  }
+  
+  .Download-button::after {
+    content: "";
+    width: 4px;
+    height: 40%;
+    background-color: white;
+    position: absolute;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    right: 0;
+    transition: all 0.2s;
+  }
+  
+  .Download-button:hover::before,
+  .Download-button:hover::after {
+    height: 60%;
+  }
+  
+  .Download-button:hover::before {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    transform: translate(5px, -15px) rotate(45deg);
+  }
+  
+  .Download-button:hover::after {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    transform: translate(-5px, 15px) rotate(45deg);
+  }
+
+  .txt_align{
+    text-align: left;
+  }
+  .box_margin{
+    margin-left: 100px;
+  }
+  
+  @media only screen and (max-width: 1150px) {
+   
+}
+  @media only screen and (max-width: 990px) {
+   .profileImage {
+    margin: auto;
+   }
+   .txt_align{
+    text-align: center;
+  }
+  h3 br{
+    display: none;
+  }
+  .Download-button{
+    margin: auto;
+  }
+  .box_margin{
+    margin-left: auto;
+  }
+  }
+ 
+  @media only screen and (max-width: 600px) {
+     
+  }
+  @media only screen and (max-width: 450px) {
+    .profileImage {
+      width: 40vw;
+      height: 40vw;
+     margin-top: 50px;
+      /* right: 50%; */
+      /* transform: translateX(50%) !important; */
+      border: 5px solid yellow !important;
+    }
+    .profileImage img {
+      width: 40vw;
+    }
+
+    .text_style{
+      font-size: 2rem;
+    }
+  }
+  

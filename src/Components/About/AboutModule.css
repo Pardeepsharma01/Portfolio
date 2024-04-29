@@ -1,0 +1,27 @@
+.heading {
+	width: fit-content;
+	margin: auto;
+	/* color: #8993b1; */
+	color: black;
+	line-height: 40px;
+	/* font-weight: 900; */
+}
+.borderBottom {
+	border-bottom: 5px solid #0282bd; 
+	width: 100px;
+	margin: 5px auto;
+	border-radius: 10px;
+}
+.text{
+    text-align: justify;
+    padding: 1rem;
+    font-size: 18px;
+}
+.coding-image{
+    margin-top: 70px;
+}
+.custom-container {
+	margin-top: 0px !important;
+	
+	
+}
