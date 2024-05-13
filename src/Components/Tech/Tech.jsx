@@ -4,8 +4,8 @@ import "./TechModule.css";
 
 const Tech = () => {
   return (
-    <div className="border border-danger mt-5">
-      <div className="border border-danger heading">
+    <div className=" mt-5">
+      <div className=" heading">
         <h1>Tech Stack</h1>
         <div className=" borderBottom" />
       </div>

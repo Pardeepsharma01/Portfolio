@@ -1,4 +1,13 @@
 body{
   font-family: "Roboto Mono", monospace;
   background-color: rgb(234, 236, 236);
+  /* background-image: url("./Components/Images/Back.jpg"); */
+  /* background-size: cover; */
+  /* opacity: 1; */
+
+}
+.bb{
+  /* background-image: url("./Components/Images/Back.jpg");
+  background-repeat: no-repeat; */
+
 }

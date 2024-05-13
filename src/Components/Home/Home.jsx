@@ -1,9 +1,7 @@
 import React from "react";
 import "./HomeModule.css";
 import Pardeep from "../Images/Pardeep.jpg";
-// import Pardeep from "./Images/Pardeep.jpg";
-// import { Button, } from "@mui/material";
-// import CloudDownloadIcon from "@mui/icons-material/CloudDownload";
+
 
 const Home = () => {
   const handleDownloadClick = () => {
@@ -25,39 +23,24 @@ const Home = () => {
   };
 
   return (
-    <div className="container-fluid text-center border border-primary ">
+    <div className="container-fluid text-center  ">
       <div className="row homeorder visual">
-        <div className="col-lg-6  order-lg-2 border border-danger  profileImage">
+        <div className="col-lg-6  order-lg-2   profileImage">
           <img
             src={Pardeep}
             alt="Pardeep Sharma"
-            // className="profileImage"
-            // className="rounded-circle photo"
-            // height={350}
-            // width={350}
+           
           />
         </div>
 
-        {/* <div className="col-lg-6 order-lg-1 border border-danger  text-start "> */}
-        <div className="col-lg-6 order-lg-1 border border-danger  txt_align ">
-          {/* <div className="border border-primary mt-5 box_margin ps-5 pt-5"> */}
-          {/* <div className="border border-primary  box_margin ps-5 pt-5"> */}
-          <div className="border border-primary  box_margin  ">
+        <div className="col-lg-6 order-lg-1   txt_align ">
+          <div className="  box_margin  ">
             <p className="text_style">Hey I'm ,</p>
             <p className="text_style">Pardeep Sharma</p>
             <h3>
               I worked on Technology<br/> React And Java
             </h3>
-            {/* <Button
-            component="label"
-            variant="contained"
-            startIcon={<CloudDownloadIcon />}
-            className="mt-4"
-            onClick={handleDownloadClick}
-          >
-            Resume
-            <VisuallyHiddenInput type="file" />
-          </Button> */}
+           
 
             <button class="Download-button mt-5" onClick={handleDownloadClick}>
               <svg

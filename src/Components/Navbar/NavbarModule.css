@@ -5,29 +5,18 @@
   font-size: 30px;
 }
 .bg{
-  background-color: white !important;
+  /* background-color: white !important; */
+  background-color: rgb(234, 236, 236);
+
 }
 
 @media screen and (max-width: 990px) {
-    /* body {
-      background-color: lightgreen;
-    } */
+    
     .logostyle{
         margin-left: 10px;
     }
   }
   
-  /* Navlink Hover Effect */
-  
-  /* .Hover_over:hover{
-    border-bottom: 3px solid yellow;
-    transition-property: all 0.3s ease;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 150ms;
-  }
-  * {
-    box-sizing: border-box;
-  } */
 
   .links a:hover {
     /* color: #00a0a0; */

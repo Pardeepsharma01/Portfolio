@@ -36,14 +36,12 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <nav className="navbar navbar-expand-lg  border border-danger navbar sticky-top bg">
-      {/* // <nav className="navbar navbar-expand-lg bg-body-tertiary border border-danger navbar "> */}
+    <nav className="navbar navbar-expand-lg   navbar sticky-top bg ">
       <div className="container-fluid">
-        {/* <a className="navbar-brand border border-danger" href="#">Navbar</a> */}
         <img
           src={Logo}
           alt="logo"
-          className="rounded-circle border border-danger logostyle"
+          className="rounded-circle  logostyle"
           height={50}
         />
         <button

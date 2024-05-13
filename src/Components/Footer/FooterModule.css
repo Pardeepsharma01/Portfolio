@@ -1,0 +1,7 @@
+.line{
+    width: 90%;
+    background-color: rgb(110, 107, 107);
+    height: 2px;
+    /* justify-content: center; */
+    margin: auto;
+}

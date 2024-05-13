@@ -22,6 +22,15 @@
 }
 .custom-container {
 	margin-top: 0px !important;
+	border-radius: 20px;
+	-webkit-box-shadow: 5px 5px 15px 5px #515151; 
+box-shadow: 5px 5px 15px 5px #515151;
 	
 	
 }
+@media only screen and (max-width: 450px) {
+   
+    .custom-container{
+      width: 90%;
+    }
+  }
