@@ -38,7 +38,8 @@ const Home = () => {
             <p className="text_style">Hey I'm ,</p>
             <p className="text_style">Pardeep Sharma</p>
             <h3>
-              I worked on Technology<br/> React And Java
+              {/* I worked on Technology<br/> React And Java */}
+              I'm Frontend Developer worked on React And Java 
             </h3>
            
 
