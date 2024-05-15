@@ -3,7 +3,7 @@ import "./ContactModule.css"
 
 const Contact = () => {
   return (
-   <div>
+   <div id='Contact'>
     <div className='text-center mt-5'>
       <h1>Get In Touch</h1>
       

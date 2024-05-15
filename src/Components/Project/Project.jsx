@@ -7,6 +7,7 @@ import Project3 from "../Images/Project3.png";
 const Project = () => {
   return (
     <>
+    <div id="Project">
       <div className=" mt-5">
         <div className=" heading">
           <h1>Projects</h1>
@@ -154,6 +155,7 @@ const Project = () => {
             </div>
           </div>
         </div>
+      </div>
       </div>
     </>
   );

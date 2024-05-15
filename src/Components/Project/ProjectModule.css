@@ -12,6 +12,12 @@
   color: black !important;
   line-height: 40px;
 }
+h2{
+  text-shadow: 1px 2px 2px #767979;
+}
+h1{
+  text-shadow: 1px 2px 2px #767979;
+}
 .text {
   text-align: justify;
   /* padding: 1rem; */
@@ -20,7 +26,7 @@
 .project-image img {
   height: 300px;
   width: 500px;
-  margin-top: 20px;
+  margin-top: 15px;
 }
 .button-link {
   display: flex;

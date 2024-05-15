@@ -4,6 +4,7 @@ import "./TechModule.css";
 
 const Tech = () => {
   return (
+    <div id="Tech">
     <div className=" mt-5">
       <div className=" heading">
         <h1>Tech Stack</h1>
@@ -48,6 +49,7 @@ const Tech = () => {
           <span>GITHUB</span>
         </div>
       </div>
+    </div>
     </div>
   );
 };

@@ -10,6 +10,7 @@
 
 }
 
+
 @media screen and (max-width: 990px) {
     
     .logostyle{
@@ -21,7 +22,13 @@
   .links a:hover {
     /* color: #00a0a0; */
     /* color: rgb(6, 6, 49); */
-    color: blue;
+    color: rgb(6, 6, 131);
+  }
+  .links a{
+    /* text-shadow: 2px 2px 4px rgba(247, 7, 7, 0.5); */
+    text-shadow: 1px 2px 2px #767979;
+
+
   }
   .links a::after {
     content: "";

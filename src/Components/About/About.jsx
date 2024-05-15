@@ -4,12 +4,12 @@ import  "./AboutModule.css";
 const About = () => {
   return (
     <>
-    
+    <div id="About">
     <div className="container custom-container text-center  ">
      {/* <div className="row homeorder "> */}
        <div className="col-lg   ">
-       <h2 className="heading">About Myself</h2>
-          <div className=" borderBottom" />
+       <h1 className="heading  p-2 mt-3">About Myself</h1>
+          <div className=" borderBottom mb-3" />
           <p className="text fw-normal lh-base bg-white rounded-4 p-3">
             Greetings! I'm <b>Pardeep Sharma</b>, a passionate developer with
             a flair for creating immersive and user-friendly web experiences. My
@@ -26,7 +26,7 @@ const About = () => {
           </p>
         </div>
         </div>
-        
+        </div>
        
     </>
      
