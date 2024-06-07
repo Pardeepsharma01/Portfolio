@@ -8,9 +8,9 @@ const Contact = () => {
       <h1>Get In Touch</h1>
       
       <p style={{  lineHeight: ``,fontSize:`20px` }}>I am actively looking for new opportunities in <br/>React And Java</p>
-      <p style={{ color: `blue`, lineHeight: ``,fontSize:`20px` }}>Email :- sharmaji336659@gmail.com</p>
-      <p style={{ color: `blue`, lineHeight: ``,fontSize:`20px` }}>Mobile No. :- +91-8398870943</p>
-      <p style={{ color: `blue`, lineHeight: ``,fontSize:`20px` }}>Location :- Yamuna Nagar, Haryana, India</p>
+      <p style={{ color: `blue`, lineHeight: ``,fontSize:`20px` }}>Email:sharmaji336659@gmail.com</p>
+      <p style={{ color: `blue`, lineHeight: ``,fontSize:`20px` }}>Mobile : +91-8398870943</p>
+      <p style={{ color: `blue`, lineHeight: ``,fontSize:`20px` }}>Location : Yamuna Nagar, Haryana, India</p>
       <div
           className="contactOptions " 
         >
