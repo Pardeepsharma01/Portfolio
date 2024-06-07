@@ -20,7 +20,7 @@ const Contact = () => {
             rel="noreferrer"
             target="_blank"
           >
-           <i class="fa-solid fa-phone"></i>
+           <i className="fa-solid fa-phone"></i>
           </a>
           <a
             href="mailto:sharmaji336659@gmail.com"

@@ -33,19 +33,19 @@ const Tech = () => {
           <span>REDUX</span>
         </div>
         <div className="logoWrapper">
-          <i class="devicon-reactbootstrap-original colored"></i>
+          <i className="devicon-reactbootstrap-original colored"></i>
           <span>BOOTSTRAP</span>
         </div>
         <div className="logoWrapper">
-          <i class="devicon-materialui-plain colored"></i>
+          <i className="devicon-materialui-plain colored"></i>
           <span>MUI</span>
         </div>
         <div className="logoWrapper">
-          <i class="devicon-java-plain colored"></i>
+          <i className="devicon-java-plain colored"></i>
           <span>JAVA</span>
         </div>
         <div className="logoWrapper">
-          <i class="devicon-github-original colored"></i>
+          <i className="devicon-github-original colored"></i>
           <span>GITHUB</span>
         </div>
       </div>

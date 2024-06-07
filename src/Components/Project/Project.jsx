@@ -40,7 +40,7 @@ const Project = () => {
 
               <div className="">
                 
-                <button class="Download-button mx-auto"
+                <button className="Download-button mx-auto"
                  onClick={() =>
                   window.open(
                     "https://github.com/Pardeepsharma01/News-App",
@@ -85,7 +85,7 @@ const Project = () => {
                 className=" button-link"
                 
               >
-                 <button class="Download-button"
+                 <button className="Download-button"
                   onClick={() =>
                     window.open(
                       "https://github.com/Pardeepsharma01/Social-Media-Page",
@@ -95,7 +95,7 @@ const Project = () => {
                  >
                   <span>Github</span>
                 </button>
-                <button class="Download-button"
+                <button className="Download-button"
                 onClick={() =>
                   window.open(
                     "https://main.d36empy9lkbz7s.amplifyapp.com/",
@@ -140,7 +140,7 @@ const Project = () => {
               </p>
 
               <div className="">
-              <button class="Download-button mx-auto"
+              <button className="Download-button mx-auto"
                onClick={() =>
                 window.open(
                   "https://github.com/Pardeepsharma01/Medical-Store-Management-System",

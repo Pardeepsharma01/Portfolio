@@ -12,3 +12,14 @@ body{
   html {
     scroll-behavior: smooth;
   }
+
+  /* App.css */
+
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Other styles for your app */

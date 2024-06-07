@@ -51,7 +51,7 @@ const Home = () => {
             </h3>
            
 
-            <button class="Download-button mt-5" onClick={handleDownloadClick}>
+            <button className="Download-button mt-5" onClick={handleDownloadClick}>
               <svg
                 viewBox="0 0 640 512"
                 width="20"

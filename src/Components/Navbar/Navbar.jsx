@@ -3,6 +3,7 @@ import "./NavbarModule.css";
 import Logo from "../Images/Logo.jpg";
 import { Link } from "react-router-dom";
 
+
 const Navbar = () => {
 
 
@@ -64,6 +65,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
-// =================================================
 
