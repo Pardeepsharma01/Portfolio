@@ -24,7 +24,7 @@ const Home = () => {
 
   const handleDownloadClick = () => {
     const fileUrl =
-      "https://drive.google.com/file/d/11TU8qPK1Aaze0S8Bw0SeiW8CcM1tzPfF/view?usp=sharing";
+      "https://drive.google.com/file/d/15Z5xNkhubHwxcZWMUv1ppd7MHU5lDr7g/view?usp=drive_link";
 
     window.open(fileUrl, '_blank');
   };
