@@ -21,8 +21,8 @@ const projects: Project[] = [
     tags: ["Next.js", "Tailwind", "Framer Motion"],
     image:
       "/self1.png",
-      live : "",
-      github : "",
+      live : "https://pardeep-sharma-portfolio.vercel.app/",
+      github : "https://github.com/Pardeepsharma01/Portfolio",
       featured: true
   },
   {
