@@ -38,4 +38,5 @@ html,
 body {
   scrollbar-width: none;
   -ms-overflow-style: none;
+  overflow-x: hidden;
 }

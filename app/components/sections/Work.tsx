@@ -21,6 +21,9 @@ const projects: Project[] = [
     tags: ["Next.js", "Tailwind", "Framer Motion"],
     image:
       "/self1.png",
+      live : "",
+      github : "",
+      featured: true
   },
   {
   title: "Internet Security Visualizer",
@@ -43,6 +46,7 @@ const projects: Project[] = [
     tags: ["Three.js", "Next.js", "D3"],
     image:
       "https://images.pexels.com/photos/7688339/pexels-photo-7688339.jpeg?auto=compress&cs=tinysrgb&w=800",
+       featured: false
   },
   {
     title: "Motion Studio",
