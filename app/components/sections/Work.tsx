@@ -31,7 +31,7 @@ const projects: Project[] = [
   description:
     "A cybersecurity tool that analyzes and visualizes public IP data and vulnerabilities using the Shodan API.",
 
-  tags: ["Next js", "React", "Shodan API", "Data Visualization", "Tailwind CSS"],
+  tags: ["Next js", "React", "Shodan API", "Data Visualization", "Tailwind CSS", "Framer Motion"],
 
   image: "/ISV.png",
 
@@ -40,28 +40,38 @@ const projects: Project[] = [
 
   featured: true
 },
-  {
-    title: "Quantum Dashboard",
-    description: "Real-time data visualization with stunning 3D graphics",
-    tags: ["Three.js", "Next.js", "D3"],
+{
+    title: "Velvet Spark",
+    description: "Velvet Spark is a full-stack e-commerce platform for premium artificial jewelry",
+    tags: ["Next.js"," Tailwind CSS","Framer Motion", "Supabase", "Redux", "Google OAuth"],
     image:
-      "https://images.pexels.com/photos/7688339/pexels-photo-7688339.jpeg?auto=compress&cs=tinysrgb&w=800",
-       featured: false
+      "/velvetspark.png",
+       featured: true,
+       live: "https://velvet-spark.vercel.app",
+       github: "https://github.com/Pardeepsharma01/Velvet-spark",
   },
-  {
-    title: "Motion Studio",
-    description: "Creative toolkit for designers with advanced animations",
-    tags: ["Framer Motion", "React", "Tailwind"],
-    image:
-      "https://images.pexels.com/photos/7688165/pexels-photo-7688165.jpeg?auto=compress&cs=tinysrgb&w=800",
-  },
-  {
-    title: "Immersive Gallery",
-    description: "Virtual art gallery with WebXR experiences",
-    tags: ["WebXR", "Three.js", "GSAP"],
-    image:
-      "https://images.pexels.com/photos/7688337/pexels-photo-7688337.jpeg?auto=compress&cs=tinysrgb&w=800",
-  },
+  // {
+  //   title: "Quantum Dashboard",
+  //   description: "Real-time data visualization with stunning 3D graphics",
+  //   tags: ["Three.js", "Next.js", "D3"],
+  //   image:
+  //     "https://images.pexels.com/photos/7688339/pexels-photo-7688339.jpeg?auto=compress&cs=tinysrgb&w=800",
+  //      featured: false
+  // },
+  // {
+  //   title: "Motion Studio",
+  //   description: "Creative toolkit for designers with advanced animations",
+  //   tags: ["Framer Motion", "React", "Tailwind"],
+  //   image:
+  //     "https://images.pexels.com/photos/7688165/pexels-photo-7688165.jpeg?auto=compress&cs=tinysrgb&w=800",
+  // },
+  // {
+  //   title: "Immersive Gallery",
+  //   description: "Virtual art gallery with WebXR experiences",
+  //   tags: ["WebXR", "Three.js", "GSAP"],
+  //   image:
+  //     "https://images.pexels.com/photos/7688337/pexels-photo-7688337.jpeg?auto=compress&cs=tinysrgb&w=800",
+  // },
 ];
 
 const ProjectCard = ({ project }: { project: Project }) => {
