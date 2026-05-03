@@ -5,6 +5,14 @@ import { ChevronDown, Send } from "lucide-react";
 import { FaDownload } from "react-icons/fa6";
 
 export const Hero = () => {
+const handleDownload = () => {
+  const link = document.createElement("a");
+  link.href = "https://drive.google.com/uc?export=download&id=11hw44heO2Q_fVXqVEpeKg-ZAUucHNnqO";
+  link.target = "_blank";
+  link.click();
+  
+};
+
   const [mousePosition, setMousePosition] = useState({ x: 50, y: 50 });
 
   const buttonRef = useRef<HTMLButtonElement>(null);
@@ -162,6 +170,7 @@ export const Hero = () => {
             style={{ x: buttonX, y: buttonY }}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
+            onClick={handleDownload}
             className="relative group px-8 py-4 bg-linear-to-r from-indigo-600 to-purple-600 text-white rounded-full font-medium text-lg flex items-center gap-3 cursor-hover overflow-hidden"
           >
             <span className="relative z-10">Resume</span>
