@@ -14,64 +14,91 @@ interface Project {
 }
 
 const projects: Project[] = [
- {
+  {
     title: "Portfolio Website",
     description:
       "Personal portfolio showcasing projects, skills, and modern UI design.",
     tags: ["Next.js", "Tailwind", "Framer Motion"],
-    image:
-      "/self1.png",
-      live : "https://pardeep-sharma-portfolio.vercel.app/",
-      github : "https://github.com/Pardeepsharma01/Portfolio",
-      featured: true
+    image: "/self1.png",
+    live: "https://pardeep-sharma-portfolio.vercel.app/",
+    github: "https://github.com/Pardeepsharma01/Portfolio",
+    featured: true,
   },
   {
-  title: "Internet Security Visualizer",
+    title: "Internet Security Visualizer",
 
-  description:
-    "A cybersecurity tool that analyzes and visualizes public IP data and vulnerabilities using the Shodan API.",
+    description:
+      "A cybersecurity tool that analyzes and visualizes public IP data and vulnerabilities using the Shodan API.",
 
-  tags: ["Next js", "React", "Shodan API", "Data Visualization", "Tailwind CSS", "Framer Motion"],
+    tags: [
+      "Next js",
+      "React",
+      "Shodan API",
+      "Data Visualization",
+      "Tailwind CSS",
+      "Framer Motion",
+    ],
 
-  image: "/ISV.png",
+    image: "/ISV.png",
 
-  live: "https://internet-security-visualizer.vercel.app/",
-  github: "https://github.com/Pardeepsharma01/Internet-security-visualizer",
+    live: "https://internet-security-visualizer.vercel.app/",
+    github: "https://github.com/Pardeepsharma01/Internet-security-visualizer",
 
-  featured: true
-},
-{
-    title: "Velvet Spark",
-    description: "Velvet Spark is a full-stack e-commerce platform for premium artificial jewelry",
-    tags: ["Next.js"," Tailwind CSS","Framer Motion", "Supabase", "Redux", "Google OAuth"],
-    image:
-      "/velvetspark.png",
-       featured: true,
-       live: "https://velvet-spark.vercel.app",
-       github: "https://github.com/Pardeepsharma01/Velvet-spark",
+    featured: true,
   },
-  // {
-  //   title: "Quantum Dashboard",
-  //   description: "Real-time data visualization with stunning 3D graphics",
-  //   tags: ["Three.js", "Next.js", "D3"],
-  //   image:
-  //     "https://images.pexels.com/photos/7688339/pexels-photo-7688339.jpeg?auto=compress&cs=tinysrgb&w=800",
-  //      featured: false
-  // },
-  // {
-  //   title: "Motion Studio",
-  //   description: "Creative toolkit for designers with advanced animations",
-  //   tags: ["Framer Motion", "React", "Tailwind"],
-  //   image:
-  //     "https://images.pexels.com/photos/7688165/pexels-photo-7688165.jpeg?auto=compress&cs=tinysrgb&w=800",
-  // },
-  // {
-  //   title: "Immersive Gallery",
-  //   description: "Virtual art gallery with WebXR experiences",
-  //   tags: ["WebXR", "Three.js", "GSAP"],
-  //   image:
-  //     "https://images.pexels.com/photos/7688337/pexels-photo-7688337.jpeg?auto=compress&cs=tinysrgb&w=800",
-  // },
+  {
+    title: "Velvet Spark",
+    description:
+      "Architected a luxury jewelry platform using modern Next.js architecture, secure Supabase backend auth, fluid Redux cart workflows, and dynamic Framer Motion micro-animations.",
+    tags: [
+      "Next.js",
+      " Tailwind CSS",
+      "Framer Motion",
+      "Supabase",
+      "Redux",
+      "Google OAuth",
+    ],
+    image: "/velvetspark.png",
+    featured: true,
+    live: "https://velvet-spark.vercel.app",
+    github: "https://github.com/Pardeepsharma01/Velvet-spark",
+  },
+  {
+    title: "Verna Genomics - AI-Assisted Biotech Platform",
+    description:
+      "Engineered an AI-assisted biotech interface using advanced prompt workflows to rapidly scaffold 3D WebGL scenes, complex mathematical easing curves, and dynamic telemetry UI.",
+    tags: [
+      "AI-Assisted Engineering",
+      "Claude AI",
+      "Antigravity",
+      "Prompt Architecture",
+      "React Three Fiber",
+      "Next.js 14",
+      "Framer Motion",
+      "TypeScript",
+    ],
+    image: "/verna.png",
+    featured: true,
+    live: "https://verna-genomics.vercel.app",
+    github: "https://github.com/Pardeepsharma01/Verna-Genomics",
+  },
+  {
+    title: "Craftume",
+    description:
+      "Architected an AI-powered SaaS resume builder featuring dynamic split-screen editing, ATS scoring workflows, Supabase auth/storage, and selectable-text PDF rendering.",
+    tags: [
+      "Next.js 16",
+      "React 19",
+      "Gemini API",
+      "Supabase",
+      "Redux Toolkit",
+      "Tailwind CSS",
+    ],
+    image: "/craftume.png",
+    featured: true,
+    live: "https://craftume.vercel.app",
+    github: "https://github.com/Pardeepsharma01/craftume",
+  },
 ];
 
 const ProjectCard = ({ project }: { project: Project }) => {
@@ -122,84 +149,81 @@ const ProjectCard = ({ project }: { project: Project }) => {
   }, []);
 
   return (
-    
     <motion.div
-  ref={cardRef}
-  onMouseMove={handleMouseMove}
-  onMouseLeave={handleMouseLeave}
-  style={{
-    rotateX: isTouchDevice ? 0 : rotateX,
-    rotateY: isTouchDevice ? 0 : rotateY,
-    transformStyle: "preserve-3d",
-  }}
-  initial={{ opacity: 0, y: 50 }}
-  whileInView={{ opacity: 1, y: 0 }}
-  viewport={{ once: true }}
-  transition={{ duration: 0.6 }}
-  className="group relative bg-linear-to-br from-gray-900/50 to-gray-800/30 backdrop-blur-sm border border-gray-700/50 rounded-2xl overflow-hidden cursor-hover"
->
-  {/* Image */}
-  <div className="relative overflow-hidden h-64">
-    <motion.img
-      src={project.image}
-      alt={project.title}
-      className="w-full h-full object-cover"
-      initial={{ scale: 1.2 }}
-      whileInView={{ scale: 1 }}
+      ref={cardRef}
+      onMouseMove={handleMouseMove}
+      onMouseLeave={handleMouseLeave}
+      style={{
+        rotateX: isTouchDevice ? 0 : rotateX,
+        rotateY: isTouchDevice ? 0 : rotateY,
+        transformStyle: "preserve-3d",
+      }}
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
-      transition={{ duration: 0.8 }}
-    />
-    <div className="absolute inset-0 bg-linear-to-t from-gray-900 via-gray-900/50 to-transparent" />
-  </div>
+      transition={{ duration: 0.6 }}
+      className="group relative bg-linear-to-br from-gray-900/50 to-gray-800/30 backdrop-blur-sm border border-gray-700/50 rounded-2xl overflow-hidden cursor-hover"
+    >
+      {/* Image */}
+      <div className="relative overflow-hidden h-64">
+        <motion.img
+          src={project.image}
+          alt={project.title}
+          className="w-full h-full object-cover"
+          initial={{ scale: 1.2 }}
+          whileInView={{ scale: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8 }}
+        />
+        <div className="absolute inset-0 bg-linear-to-t from-gray-900 via-gray-900/50 to-transparent" />
+      </div>
 
-  {/* Content */}
-  <div className="p-6" style={{ transform: "translateZ(50px)" }}>
-    <h3 className="text-2xl font-bold text-white mb-3 flex items-center gap-2">
-      {project.title}
-      <ExternalLink className="w-5 h-5 text-purple-400 opacity-0 group-hover:opacity-100 transition-opacity" />
-    </h3>
+      {/* Content */}
+      <div className="p-6" style={{ transform: "translateZ(50px)" }}>
+        <h3 className="text-2xl font-bold text-white mb-3 flex items-center gap-2">
+          {project.title}
+          <ExternalLink className="w-5 h-5 text-purple-400 opacity-0 group-hover:opacity-100 transition-opacity" />
+        </h3>
 
-    <p className="text-gray-400 mb-4">{project.description}</p>
+        <p className="text-gray-400 mb-4">{project.description}</p>
 
-    {/* Tags */}
-    <div className="flex flex-wrap gap-2 mb-4">
-      {project.tags.map((tag, i) => (
-        <span
-          key={i}
-          className="px-3 py-1 text-xs bg-indigo-600/30 text-indigo-300 rounded-full border border-indigo-500/30"
-        >
-          {tag}
-        </span>
-      ))}
-    </div>
+        {/* Tags */}
+        <div className="flex flex-wrap gap-2 mb-4">
+          {project.tags.map((tag, i) => (
+            <span
+              key={i}
+              className="px-3 py-1 text-xs bg-indigo-600/30 text-indigo-300 rounded-full border border-indigo-500/30"
+            >
+              {tag}
+            </span>
+          ))}
+        </div>
 
-    {/*  Buttons Added */}
-   <div className="flex gap-3 opacity-100 md:opacity-0 md:group-hover:opacity-100 transition duration-300">
-  
-  <a
-    href={project.live}
-    target="_blank"
-    rel="noopener noreferrer"
-    className="px-4 py-2 text-sm font-medium bg-linear-to-r from-indigo-500 to-purple-500 text-white rounded-lg"
-  >
-    Live Demo
-  </a>
+        {/*  Buttons Added */}
+        <div className="flex gap-3 opacity-100 md:opacity-0 md:group-hover:opacity-100 transition duration-300">
+          <a
+            href={project.live}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-4 py-2 text-sm font-medium bg-linear-to-r from-indigo-500 to-purple-500 text-white rounded-lg"
+          >
+            Live Demo
+          </a>
 
-  <a
-    href={project.github}
-    target="_blank"
-    rel="noopener noreferrer"
-    className="px-4 py-2 text-sm font-medium border border-gray-600 text-gray-300 rounded-lg"
-  >
-    GitHub
-  </a>
+          <a
+            href={project.github}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-4 py-2 text-sm font-medium border border-gray-600 text-gray-300 rounded-lg"
+          >
+            GitHub
+          </a>
+        </div>
+      </div>
 
-</div>
-  </div>
-
-  {/* Hover Glow */}
-  <div className="absolute inset-0 pointer-events-none bg-linear-to-br from-indigo-600/0 via-purple-600/0 to-indigo-600/0 group-hover:from-indigo-600/10 group-hover:via-purple-600/10 group-hover:to-indigo-600/10 transition-all duration-500" />
-</motion.div>
+      {/* Hover Glow */}
+      <div className="absolute inset-0 pointer-events-none bg-linear-to-br from-indigo-600/0 via-purple-600/0 to-indigo-600/0 group-hover:from-indigo-600/10 group-hover:via-purple-600/10 group-hover:to-indigo-600/10 transition-all duration-500" />
+    </motion.div>
   );
 };
 
