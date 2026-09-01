@@ -11,6 +11,7 @@ interface Project {
   live?: string;
   github?: string;
   featured?: boolean;
+  status?: string;
 }
 
 const projects: Project[] = [
@@ -64,18 +65,16 @@ const projects: Project[] = [
     github: "https://github.com/Pardeepsharma01/Velvet-spark",
   },
   {
-    title: "Verna Genomics - AI-Assisted Biotech Platform",
+    title: "Verna Genomics — Biotech Landing Experience",
     description:
-      "Engineered an AI-assisted biotech interface using advanced prompt workflows to rapidly scaffold 3D WebGL scenes, complex mathematical easing curves, and dynamic telemetry UI.",
+      "Designed and built an immersive biotech landing page featuring interactive 3D WebGL scenes, custom easing-based motion, and a dynamic telemetry-style UI. Used an AI-assisted development workflow (Claude, Antigravity) to accelerate 3D scene scaffolding and animation logic, while independently directing the visual concept, UX flow, and technical integration.",
     tags: [
-      "AI-Assisted Engineering",
-      "Claude AI",
-      "Antigravity",
-      "Prompt Architecture",
       "React Three Fiber",
+      "Three.js",
       "Next.js 14",
       "Framer Motion",
       "TypeScript",
+      "WebGL",
     ],
     image: "/verna.png",
     featured: true,
@@ -85,7 +84,7 @@ const projects: Project[] = [
   {
     title: "Craftume",
     description:
-      "Architected an AI-powered SaaS resume builder featuring dynamic split-screen editing, ATS scoring workflows, Supabase auth/storage, and selectable-text PDF rendering.",
+      "Architected an AI-powered SaaS resume builder featuring dynamic split-screen editing, ATS scoring workflows, Supabase auth/storage, and selectable-text PDF rendering. Followed an AI-assisted development workflow using tools like Claude, Gemini, and Antigravity to accelerate implementation, while independently owning system architecture, data flow design, and code review. Currently in active development.",
     tags: [
       "Next.js 16",
       "React 19",
@@ -96,6 +95,7 @@ const projects: Project[] = [
     ],
     image: "/craftume.png",
     featured: true,
+    status: "Currently in active development",
     live: "https://craftume.vercel.app",
     github: "https://github.com/Pardeepsharma01/craftume",
   },
@@ -185,7 +185,12 @@ const ProjectCard = ({ project }: { project: Project }) => {
           <ExternalLink className="w-5 h-5 text-purple-400 opacity-0 group-hover:opacity-100 transition-opacity" />
         </h3>
 
-        <p className="text-gray-400 mb-4">{project.description}</p>
+        <p className="text-gray-400 mb-4 text-justify">{project.description}</p>
+        {project.status && (
+          <p className="text-purple-400 text-sm font-medium italic mb-4">
+            {project.status}
+          </p>
+        )}
 
         {/* Tags */}
         <div className="flex flex-wrap gap-2 mb-4">
