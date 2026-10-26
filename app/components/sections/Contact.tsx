@@ -355,7 +355,7 @@ export const Contact = () => {
           <div aria-live="polite">
             {status === "success" && (
               <p className="text-green-400 text-base">
-                Thank you! Your message has been sent. I will reply to you soon.
+                Thanks for reaching out! I'll get back to you within 24 hours.
               </p>
             )}
             {status === "error" && (
