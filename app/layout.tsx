@@ -30,7 +30,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <LoaderWrapper>{children}</LoaderWrapper>
-        // vercel analytics component to track page views and other analytics data
+        {/* vercel analytics component to track page views and other analytics data */}
         <Analytics />
       </body>
     </html>
